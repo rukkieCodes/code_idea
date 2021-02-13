@@ -1,0 +1,393 @@
+@import "./settings/mediaQuery";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.design_graphic_design {
+    position: relative;
+
+    .all_sections {
+        width: 100%;
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+
+        .section_one {
+            width: 100%;
+            height: 50vh;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(../images/bg3.png) no-repeat center center fixed !important;
+            background-size: cover;
+            background-position: 0% 0% !important;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: url(../images/bg4.svg) no-repeat fixed !important;
+                background-size: cover;
+
+                @include mobile {
+                    background: url(../images/bg4.svg) no-repeat center center fixed !important;
+                }
+            }
+
+            .backdrop {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(20px);
+            }
+
+            .section_one_content {
+                width: 90%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                position: relative;
+                z-index: 1;
+
+
+                .toolbar {
+                    background: transparent;
+                    width: 100%;
+
+                    .space {
+                        display: none;
+                    }
+
+                    .menu_btn {
+                        display: none;
+
+                        @media (max-width: 897px) {
+                            display: initial;
+                        }
+                    }
+
+                    .img {
+                        width: 3em;
+                        height: auto;
+
+                        @include mobile {
+                            width: 2em;
+                        }
+                    }
+
+                    .toolbar_title {
+                        color: #fff;
+                        font-weight: 800;
+
+                        @include mobile {
+                            font-weight: 400;
+                            font-size: 1em;
+                        }
+                    }
+
+                    .links {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        .btn {
+                            background: #FA4D68;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .texts {
+                    position: absolute;
+                    top: 40%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        color: #fff;
+                        font-size: 1.5em;
+                        font-weight: 100;
+
+                        @include mobile {
+                            width: 100%;
+                            font-size: 1em;
+                        }
+                    }
+
+                    h1 {
+                        color: #fff;
+                        font-size: 2.3em;
+                        font-weight: 800;
+                        margin-top: -.3em;
+
+                        @include mobile {
+                            font-size: 1.5em;
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+
+                .foot {
+                    width: auto;
+
+                    .foot_content {
+                        width: 100%;
+                        color: #fff;
+
+                        @include mobile {
+                            font-size: .8em;
+                        }
+
+                        .icon {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section_two {
+            width: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4em;
+            margin-bottom: 8em;
+
+            @include mobile {
+                margin-bottom: 30em;
+            }
+
+            .section_two_content {
+                width: 90%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                position: relative;
+                z-index: 1;
+
+                .cards {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: relative;
+
+                    .card_one {
+                        width: 100%;
+                        height: 50vh;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 2px solid #FA4D68;
+                        border-left: none;
+                        border-right: none;
+                        border-bottom: none;
+
+                        @include mobile {
+                            flex-direction: column;
+                            height: initial;
+                            border: 2px solid #FA4D68;
+                            border-right: none;
+                        }
+
+                        .left_side {
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: #FA4D68;
+                            clip-path: polygon(0% 0%, 89% 0, 89% 32%, 100% 52%, 90% 68%, 90% 100%, 0 100%);
+
+                            @include mobile {
+                                width: 100%;
+                                clip-path: polygon(100% 0, 0 0, 0 89%, 42% 90%, 49% 100%, 56% 90%, 100% 89%);
+                                padding: 2em 0;
+                                text-align: center;
+                            }
+
+                            .left_content {
+                                width: 40%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                @include mobile {
+                                    width: 60%;
+                                }
+
+                                p {
+                                    color: #fff;
+                                    font-size: 2.5em;
+                                    font-weight: 800;
+
+                                    @include mobile {
+                                        font-size: 2em;
+                                    }
+                                }
+                            }
+                        }
+
+                        .right_side {
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            @include mobile {
+                                width: 100%;
+                                margin-top: 1em;
+                            }
+
+                            .right_content {
+                                width: 80%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                @include mobile {
+                                    width: 90%;
+                                }
+
+                                p {
+                                    color: rgba(0, 0, 0, 0.6);
+                                    font-size: 1.2em;
+
+                                    @include mobile {
+                                        font-size: 1em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .join {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 100%;
+                        border: 2px solid #FA4D68;
+                        border-left: none;
+
+                        @include mobile {
+                            display: none;
+                        }
+                    }
+
+                    .card_two {
+                        width: 100%;
+                        height: 50vh;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 2px solid #FA4D68;
+                        border-right: none;
+                        border-top: none;
+                        margin-top: 4em;
+
+                        @include mobile {
+                            flex-direction: column-reverse;
+                            height: initial;
+                            border: 2px solid #FA4D68;
+                            border-left: none;
+                        }
+
+                        .left_side {
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            @include mobile {
+                                width: 100%;
+                                margin-top: 1em;
+                            }
+
+                            .left_content {
+                                width: 80%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                @include mobile {
+                                    width: 90%;
+                                }
+
+                                p {
+                                    color: rgba(0, 0, 0, 0.6);
+                                    font-size: 1.2em;
+
+                                    @include mobile {
+                                        font-size: 1em;
+                                    }
+                                }
+                            }
+                        }
+
+                        .right_side {
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: #FA4D68;
+                            clip-path: polygon(100% 0, 13% 0, 13% 39%, 0 50%, 13% 64%, 13% 100%, 100% 100%);
+
+                            @include mobile {
+                                width: 100%;
+                                clip-path: polygon(100% 0, 0 0, 0 89%, 42% 90%, 49% 100%, 56% 90%, 100% 89%);
+                                padding: 2em 0;
+                                text-align: center;
+                            }
+
+                            .right_content {
+                                width: 20%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                @include mobile {
+                                    width: 60%;
+                                }
+
+                                p {
+                                    color: #fff;
+                                    font-size: 2.5em;
+                                    font-weight: 800;
+                                    margin-right: -3em;
+
+                                    @include mobile {
+                                        font-size: 2em;
+                                        margin-left: -3em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

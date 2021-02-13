@@ -1,0 +1,471 @@
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S6 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Google Pixel ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Google Pixel XL ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- HTC One ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Windows Phone ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* ----------- Galaxy Tab 2 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy Tab S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Nexus 7 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Nexus 9 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Kindle Fire HD 7" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Kindle Fire HD 8.9" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Non-Retina Screens ----------- */
+/* ----------- Retina Screens ----------- */
+/* ----------- Apple Watch ----------- */
+/* ----------- Moto 360 Watch ----------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.contact {
+  position: relative;
+}
+
+.contact .all_sections {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact .all_sections .section_one {
+  width: 100%;
+  height: 50vh;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../images/bg3.png) no-repeat center center fixed !important;
+  background-size: cover;
+  background-position: 0% 0% !important;
+  position: relative;
+}
+
+.contact .all_sections .section_one::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg4.svg) no-repeat fixed !important;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_one::before {
+    background: url(../images/bg4.svg) no-repeat center center fixed !important;
+  }
+}
+
+.contact .all_sections .section_one .backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.contact .all_sections .section_one .section_one_content {
+  width: 90%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.contact .all_sections .section_one .section_one_content .toolbar {
+  background: transparent;
+  width: 100%;
+}
+
+.contact .all_sections .section_one .section_one_content .toolbar .space {
+  display: none;
+}
+
+.contact .all_sections .section_one .section_one_content .toolbar .menu_btn {
+  display: none;
+}
+
+@media (max-width: 897px) {
+  .contact .all_sections .section_one .section_one_content .toolbar .menu_btn {
+    display: initial;
+  }
+}
+
+.contact .all_sections .section_one .section_one_content .toolbar .img {
+  width: 3em;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_one .section_one_content .toolbar .img {
+    width: 2em;
+  }
+}
+
+.contact .all_sections .section_one .section_one_content .toolbar .toolbar_title {
+  color: #fff;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_one .section_one_content .toolbar .toolbar_title {
+    font-weight: 400;
+    font-size: 1em;
+  }
+}
+
+.contact .all_sections .section_one .section_one_content .toolbar .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .all_sections .section_one .section_one_content .toolbar .links .btn {
+  background: #FA4D68;
+  color: #fff;
+}
+
+.contact .all_sections .section_one .section_one_content h1 {
+  color: #fff;
+  font-size: 2.3em;
+  font-weight: 800;
+  position: absolute;
+  top: 46%;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_one .section_one_content h1 {
+    font-size: 1.5em;
+  }
+}
+
+.contact .all_sections .section_one .section_one_content .foot {
+  width: auto;
+}
+
+.contact .all_sections .section_one .section_one_content .foot .foot_content {
+  width: 100%;
+  color: #fff;
+}
+
+.contact .all_sections .section_one .section_one_content .foot .foot_content .icon {
+  color: #fff;
+}
+
+.contact .all_sections .section_two {
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4em;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_two {
+    margin-top: 4em;
+  }
+}
+
+.contact .all_sections .section_two .section_two_content {
+  width: 90%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.contact .all_sections .section_two .section_two_content .text {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_two .section_two_content .text {
+    width: 100%;
+  }
+}
+
+.contact .all_sections .section_two .section_two_content .text p {
+  font-size: 2em;
+  color: #FA4D68;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_two .section_two_content .text p {
+    font-size: 1.5em;
+  }
+}
+
+.contact .all_sections .section_three {
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .all_sections .section_three .section_three_content {
+  width: 90%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.contact .all_sections .section_three .section_three_content .text {
+  width: 10%;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_three .section_three_content .text {
+    width: 40%;
+  }
+}
+
+.contact .all_sections .section_three .section_three_content .text p {
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.contact .all_sections .section_four {
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .all_sections .section_four .section_four_content {
+  width: 90%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.contact .all_sections .section_four .section_four_content .card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_four .section_four_content .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.contact .all_sections .section_four .section_four_content .card .left_side {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_four .section_four_content .card .left_side {
+    width: 100%;
+    margin-top: 1em;
+  }
+}
+
+.contact .all_sections .section_four .section_four_content .card .left_side img {
+  width: 100%;
+  height: auto;
+}
+
+.contact .all_sections .section_four .section_four_content .card .right_side {
+  width: 45%;
+}
+
+@media (max-width: 768px) {
+  .contact .all_sections .section_four .section_four_content .card .right_side {
+    width: 100%;
+    margin-top: 2em;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

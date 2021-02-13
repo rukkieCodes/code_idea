@@ -1,0 +1,244 @@
+@import "./settings/mediaQuery";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: #FA4D68 !important;
+    margin-top: -6em;
+
+    @include mobile {
+        margin-top: -25em;
+        height: initial;
+    }
+
+
+    .footer_content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .section_one {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4em 2em;
+
+            @include mobile {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .card_one,
+            .card_three {
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                @include mobile {
+                    width: 100%;
+                }
+
+                p {
+                    color: #fff;
+
+                    .icon {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .card_one {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                @include mobile {
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .logo {
+                    width: auto;
+                    height: 4em;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    img {
+                        width: 25%;
+                        height: auto;
+
+                        @include mobile {
+                            width: 20%;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.5em;
+                        font-weight: 800;
+                        color: #fff;
+                        margin-top: 1em;
+                        margin-left: .5em;
+
+                        @include mobile {
+                            font-size: 1.2em;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .body {
+                    width: 90%;
+
+                    @include mobile {
+                        width: 53%;
+                        margin-top: -1em;
+                    }
+
+                    p {
+                        font-size: 1.8em;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-top: 1.5em;
+
+                        @include mobile {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+
+            .card_two {
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                @include mobile {
+                    justify-content: center;
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    @include mobile {
+
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            width: 45%;
+                            margin-top: 2em;
+                        }
+                    }
+
+                    &:last-child {
+                        @include mobile {
+                            width: 90%;
+                        }
+
+                        .head {
+                            width: 100%;
+                            text-align: left;
+
+                            p {
+                                color: #fff;
+                                font-size: 1.2em;
+                                font-weight: 500;
+
+                                @include mobile {
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+
+                        .body {
+                            width: 100%;
+
+                            .btn {
+                                color: #FA4D68;
+                            }
+                        }
+                    }
+
+                    .head {
+                        width: 100%;
+                        text-align: left;
+
+                        p {
+                            color: #fff;
+                            font-size: 1.2em;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .body {
+                        width: 50%;
+
+                        p {
+                            color: #fff;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+
+            .card_three {
+                @include mobile {
+                    width: 90%;
+                    margin-top: 2em;
+                    font-size: 1em;
+
+                    .buttons {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .btn {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section_two {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2em;
+            padding-top: 1em;
+            border-top: 2px solid #fff;
+
+            @include mobile {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            p {
+                color: #fff;
+                font-size: 1em;
+
+
+                @include mobile {
+                    font-size: .9em;
+                }
+            }
+        }
+    }
+}
